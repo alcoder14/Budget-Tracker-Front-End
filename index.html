@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3bcff65460.js" crossorigin="anonymous"></script>
+    <title>Budget Tracker Application</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Budget Manager</h1>
+    </div>
+    <div class="container">
+        <div class="child total-values">
+            <div class="total-income box">
+                <h2>Total Income</h2>
+                <p id="total-income-value"><span>$</span>0.00</p>
+            </div>
+            <div class="total-outcome box">
+                <h2>Total Outcome</h2>
+                <p id="total-outcome-value"><span>$</span>0.00</p>
+            </div>
+            <div class="total-difference box">
+                <h2>Total Difference</h2>
+                <p id="total-difference-value"><span>$</span>0.00</p>
+            </div>
+        </div>
+        <div class="child visualization-bar">
+            <div id="visualize">
+                <div id="visualizeOutcome"><p id="percentageTextOutcome"></p></div>
+                <div id="visualizeIncome"><p id="percentageTextIncome"></p></div>
+            </div>
+        </div>
+        <div class="child editor">
+            <nav id="navigation">
+                <button id="income-btn">Income</button>
+                <button id="outcome-btn">Outcome</button>
+            </nav>
+            <div class="records-container">
+                <div id="records">
+                    <p id="no-records">No records to show here</p>
+                </div>
+                <div class="buttons">
+                    <button id="deleteAll">Delete All</button>
+                    <button id="showAll">Show All</button>
+                </div>
+            </div>
+            <div class="new-input-container">
+                <p id="title">Add New Outcome Record</p>
+                <div id="new-input">
+                    <div class="input-fields">
+                        <input type="text" id="description" placeholder="Description">
+                        <input type="number" id="value" placeholder="Value">
+                    </div>
+                    <button id="add-btn">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

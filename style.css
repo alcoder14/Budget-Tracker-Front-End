@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    font-size: 40px;
+    color: white;
+    background-color: #2c3241;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 860px;
+    background-image: linear-gradient(to right, #98878f,#494e6b);
+}
+.total-values{
+    flex-basis: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.total-values h2{
+    color: #b26277;
+    font-size: 50px;
+    padding: 10px;
+}
+.total-values p{
+    font-size: 45px;
+    color: white;
+}
+.box{
+    background-color: #2c3241;
+    margin: 15px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visualization-bar{
+    flex-basis: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#visualize{
+    height: 100%;
+    background-color: #2c3241;
+    width: 160px;
+    margin: 15px;
+    position: relative;
+}
+
+
+#visualizeIncome, #visualizeOutcome{
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
+#visualizeIncome{
+    background-color: #b26277;
+    height: 0px;
+    bottom: 0;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+}
+#visualizeOutcome{
+    background-color: #494e6b;
+    height: 0;
+    top: 0;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.editor{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 20px;
+}
+.editor:nth-child(n){
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#navigation{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.editor button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 0 15px;
+    height: 40px;
+    font-size: 20px;
+}
+#income-btn{
+    color: white;
+    background-color: #494e6b;
+}
+#outcome-btn{
+    background-color: white;
+    color: #494e6b;
+}
+
+.records-container{
+    height: 500px;
+    width: 100%;
+    background-color: #2a3040;
+}
+#records{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #192231;
+    height: 400px;
+}
+#no-records{
+    font-size: 40px;
+    color: white;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px;
+}
+
+#title{
+    color: white;
+    font-size: 50px;
+    margin: 5px 0;
+}
+#new-input{
+    display: flex;
+    justify-content: flex-start;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+}
+.input-fields input{
+    padding: 14px 20px;
+    background-color: #192231;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    width: 500px;
+}
+#add-btn{
+    margin: 10px 0 0 20px;
+    height: 136px;
+    width: 200px;
+    font-size: 50px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    background-color: #192231;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+#percentageTextOutcome, #percentageTextIncome{
+    margin: 10px;
+    text-align: center;
+}
+
+.deleteBtn{
+    outline: 0;
+    border: 0;
+    background-color: #b26277;
+    color: white;
+    padding: 10px 15px;
+}
+.elemContainer{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
